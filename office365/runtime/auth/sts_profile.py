@@ -12,6 +12,8 @@ class STSProfile(object):
         self.authorityUrl = authority_url
         if environment == "GCCH":
             self.serviceUrl = "https://login.microsoftonline.us"
+        elif environment == "ZHCN":
+            self.serviceUrl = "https://login.microsoftonline.cn"
         else:
             self.serviceUrl = "https://login.microsoftonline.com"
         self.securityTokenServicePath = "extSTS.srf"
